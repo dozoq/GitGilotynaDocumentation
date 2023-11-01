@@ -1,0 +1,54 @@
+\documentclass[12pt]{tech} 
+
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{pbox}
+\usepackage{sudoku}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+\usepackage{breakurl}
+\usepackage[breaklinks]{hyperref}
+\setcounter{secnumdepth}{3}
+
+\begin{document} % Zaczynamy dokument
+
+\input{title} % wrzucamy zawartość strony title
+
+\thispagestyle{empty}
+
+% spis tresci
+% spis obrazkow
+% spis code-snippetow
+
+\newpage % dodajemy nową stronę
+\tableofcontents % generujemy spis sekcji, subsekcji i subsubsekcji
+\newpage % nowa strona
+\listoffigures % generujemy listę obrazków
+\newpage
+\listoftables % generujemy listę tabelek
+\newpage
+
+\section{Wstęp} % Nazwa sekcji
+
+\section{TEST}
+% \input{ne}
+\subsection{Some Simple stuff} % Nazwa podsekcji
+\input{Input1} % Wrzucenie w to miejsce zawartości pliku Input1.tex
+
+\subsection{Labels}
+\input{Labels}
+
+\section{Last Chapter}
+\input{LastChapter}
+
+\newpage
+\nocite{korki, twoLane, sotl2, sim_models, nasch, sotl, knospe, ris, reducing, bdi, vms, latent, greedy_traffic, makro, rl_lights, busnaschr, itsumo, transims, vdr, intelligent_tlc, bl, korki_2, aggr_timid_driv, measuring, accidents, wekabook, ql_watkins} % tutaj tylko spis wykorzystywanych ID z bibliografii (więcej tu: https://bibtex.eu) - do tego polecam również google scholar i automatyczne branie BibteXa po kliknięciu Cite wyszukiwanego artykułu
+
+%Placeholders:
+\bibliography{bibliografia} % wygenerowana bibliografia na podstawie pliku .bib
+
+\end{document}

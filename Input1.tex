@@ -1,0 +1,48 @@
+\subsubsection{Simple Text Visual Changing} % Nazwa pod-podsekcji
+
+% https://tex.stackexchange.com/questions/138/what-are-underfull-hboxes-and-vboxes-and-how-can-i-get-rid-of-them
+regular, regular, \emph{distinguished}, regular, \textbf{bold text}, regular, \texttt{machine font}, \textit{ italic, {\em distinguished text among italics}, italic}, \textsc{capital}, \textsf{non-sheriff}
+
+% Różnie rodzenie fontów pokazane powyżej. Dodatkowo sam rozmiar / rodzaj fontów można ustawiać w pliku konfiguracyjnym .cls
+
+\subsubsection{Simple Text Size Changing}
+
+% Zabawa rozmiarami fontów
+{\small small font}, {\large large font}, average size, {\footnotesize footnote size}, {\Large very large font size},
+\textit{\LARGE even larger font (with italic)} {\huge and huuuuuge} {\Huge and HUUUUUGER}
+
+\subsubsection{Commands}
+
+%\begin{nazwa-polecenia}
+%tekst
+%\end{nazwa-polecenia}
+
+Points:: % Po kolei prezentacja punktowania rzeczy. Wszystko zaczyna się od \begin i kończy na \end. Każdy nowy element zaczyna się nowym punktem (\item). Wewnątrz punktów można używać innych rzeczy - tu zaprezentowane flushowanie tekstu
+\begin{itemize}
+    \item \textbf{Flushing:}
+        \begin{flushleft}
+        Left flush
+        \end{flushleft}
+        \begin{center}
+        Center
+        \end{center}
+        \begin{flushright}
+        Right flush.
+        \end{flushright}
+    \item Some other item -- with some desription
+    \item And you know what?
+        \begin{itemize} % Wyliczanki można zagnieżdżać
+        \item INCEPTION
+        \end{itemize}
+\end{itemize}
+
+And Enumerations: % No i poza itemize jest jeszcze enumerate czyli wyliczenia
+\begin{enumerate}
+    \item First point
+    \item Second point
+    \item Third point
+    \item And inception again:
+    \begin{enumerate}
+        \item Item new
+    \end{enumerate}
+\end{enumerate}
